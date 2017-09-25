@@ -22,12 +22,14 @@ plugins:
 social:
   - title: twitter
     url: https://twitter.com/yowcivictech
+  - title: slack
+    url: https://yowct-invite-bot.herokuapp.com/
   - title: meetup
     url: https://www.meetup.com/YOW_CT/
   - title: github
     url: https://github.com/YOWCT
-  - title: slack
-    url: https://yowct-invite-bot.herokuapp.com/
+  - title: trello
+    url: https://trello.com/b/LoOLqqad/ottawa-civic-tech-yowct-open-board
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
