@@ -9,7 +9,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 copyright: 'Copyright &copy; 2017 Xander Miller. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
-description: "Ottawa CivicTech (#YOWCT) strengths the community of people in Ottawa who build civic good. We bring together people in policy and technology to solve tough problems and make our communities better."
+description: "Ottawa CivicTech (#YOWCT) strengthens the community of people in Ottawa who build civic good. We bring together people in policy and technology to solve tough problems and make our communities better."
 
 # Build settings
 markdown: kramdown
