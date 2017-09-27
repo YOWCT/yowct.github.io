@@ -2,12 +2,14 @@
 title: Ottawa CivicTech
 hashtag: "#YOWCivicTech"
 sub_title: Build civic good.
-email: your-email@example.com
-description: The most amazing club ever.
+email: xander.miller@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+copyright: 'Copyright &copy; 2017 Xander Miller. All Rights Reserved.'
+credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+
+description: "Ottawa Civic Tech (YOWCT) is an effort to strengthen the community of people in Ottawa who want to build civic good. We are people who think bringing together policy, technology & inspiration can solve tough problems and make our communities better."
 
 # Build settings
 markdown: kramdown
