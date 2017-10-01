@@ -116,6 +116,12 @@ h6 {
     background-size: cover;
 }
 
+.banner-logo {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 2pc;
+}
+
 .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
