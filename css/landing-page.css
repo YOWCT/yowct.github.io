@@ -171,3 +171,18 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+.navbar-default .navbar-brand {
+  color: #888;
+}
+
+.navbar-default .navbar-text {
+  color: #888;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #888;
+}
+
+.text-muted {
+  color: #888;
+}
