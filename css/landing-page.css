@@ -21,6 +21,11 @@ h6 {
     font-weight: 700;
 }
 
+a {
+  color: #3E79BC;
+  text-decoration: none;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -173,16 +178,16 @@ p.copyright {
 }
 
 .navbar-default .navbar-brand {
-  color: #888;
+  color: #797676;
 }
 
 .navbar-default .navbar-text {
-  color: #888;
+  color: #797676;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #888;
+  color: #797676;
 }
 
 .text-muted {
-  color: #888;
+  color: #797676;
 }
