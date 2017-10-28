@@ -1,4 +1,4 @@
-# Ottawa CivicTech Website
+# Ottawa Civic Tech Website
 
 This site is currently under development and can be seend live in it's current state at [yowct.github.io](https://yowct.github.io/)
 
