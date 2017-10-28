@@ -1,6 +1,6 @@
 # Ottawa Civic Tech Website
 
-This site is currently under development and can be see live in its current state at [yowct.github.io](https://yowct.github.io/).
+This site is currently under development and can be seen live at [yowct.github.io](https://yowct.github.io/).
 
 ## Landing Page Jekyll theme
 
