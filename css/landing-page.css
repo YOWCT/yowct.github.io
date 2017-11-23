@@ -63,29 +63,7 @@ a {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
 
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
 
 .network-name {
     text-transform: uppercase;
@@ -190,4 +168,46 @@ p.copyright {
 
 .text-muted {
   color: #797676;
+}
+
+@media(max-width:1199px) {
+    .intro-header{
+        background: url(../img/intro-bg-md-1200.jpg) no-repeat center center;
+    }
+
+    .banner {
+        background: url(../img/banner-bg-md-1200.jpg) no-repeat center center;
+    }
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+
+    .intro-header{
+        background: url(../img/intro-bg-sm-768.jpg) no-repeat center center;
+    }
+
+    .banner {
+        background: url(../img/banner-bg-sm-768.jpg) no-repeat center center;
+    }
 }
