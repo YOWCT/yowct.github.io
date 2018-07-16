@@ -174,12 +174,12 @@ p.copyright {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  height: 200px;
-  background: red;
+  height: 100px;
 }
 
 #partners .flex-item {
   margin: auto;
+  width: 100px;
 }
 
 @media(max-width:1199px) {
