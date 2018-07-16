@@ -3,14 +3,14 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<h2>Keep in Touch:</h2>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-lg-9">
 					<ul class="list-inline banner-social-buttons">
 						{% for social in site.social %}
 						<li>
-							<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+							<a href="{{ social.url }}" class="btn btn-default btn-med"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
 						</li>
 						{% endfor %}
 					</ul>
