@@ -109,7 +109,7 @@ a {
 .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .banner ul {
@@ -168,6 +168,18 @@ p.copyright {
 
 .text-muted {
   color: #797676;
+}
+
+#partners .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 200px;
+  background: red;
+}
+
+#partners .flex-item {
+  margin: auto;
 }
 
 @media(max-width:1199px) {
