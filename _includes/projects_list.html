@@ -1,0 +1,18 @@
+<p>Here are some recent projects:</p>
+
+<ul>
+    {% for project in site.data.projects %}
+    <li>
+        <h3>
+            {% if project.url %}
+                <a href="{{ project.url }}">{{ project.name }}</a>
+            {% else %}
+                {{ project.name }}
+            {% endif %}
+        </h3>
+        {% if project.description %}
+            <p>{{ project.description }}</p>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>

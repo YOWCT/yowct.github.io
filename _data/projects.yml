@@ -1,0 +1,17 @@
+- name: Meeting Cost Calculator
+  url: http://meetingcostcalculator.ca/
+  description:
+    Meeting cost calculator + what are the barriers to being effective?
+    Approvals take a long time; making a tracker where you can track the
+    approvals from the start to finish; you can gamify it btw departments.
+
+- name: DemocracyKit
+  url: https://www.democracykit.org/
+
+- name: Is This Blocked in My Department
+  url: https://isthisblockedinmydepartment.ca/
+
+- name: Big Little Contracting
+  url: https://github.com/GoC-Spending/
+
+- name: Smart Cities Input 
