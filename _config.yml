@@ -2,7 +2,6 @@
 title: Ottawa Civic Tech
 hashtag: "#YOWCT"
 sub_title: Build civic good.
-email: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -32,6 +31,11 @@ social:
     url: https://github.com/YOWCT
   - title: trello
     url: https://trello.com/b/LoOLqqad/ottawa-civic-tech-yowct-open-board
+
+
+# - title: slack
+#   url: https://yowct-invite-bot.herokuapp.com/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
