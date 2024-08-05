@@ -15,14 +15,14 @@ Civic Tech hacknights are not unique to Ottawa. It is inspired by Code for Ameri
 
 These instructions are adapted from "[Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) and [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)."
 1. Install Ruby. For more information, see "[Installing Ruby](https://www.ruby-lang.org/en/documentation/installation/)" in the Ruby documentation.
-2. (Optional) Install [rbenv](https://github.com/rbenv/rbenv). Run `rbenv local 3.1.2` to set up a localized environment. 
+2. (Optional) Install [rbenv](https://github.com/rbenv/rbenv). Run `rbenv local 3.3.4` to set up a localized environment. 
 2. Install Bundler. For more information, see "[Bundler](https://bundler.io/)."
 
 ```bash
 
 git clone https://github.com/YOWCT/yowct.github.io
 cd yowct.github.io
-rbenv local 3.1.2
+rbenv local 3.3.4
 bundle install
 bundle exec jekyll serve
 
