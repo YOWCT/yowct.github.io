@@ -3,7 +3,7 @@ title: Ottawa Civic Tech
 hashtag: "#YOWCT"
 sub_title: Build civic good.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "ottawacivictech.ca" # the base hostname & protocol for your site, e.g. http://example.com
+url: "www.ottawacivictech.ca" # the base hostname & protocol for your site, e.g. http://example.com
 
 copyright: 'Copyright &copy; 2024. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
