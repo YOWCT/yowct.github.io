@@ -2,11 +2,10 @@
 title: Ottawa Civic Tech
 hashtag: "#YOWCT"
 sub_title: Build civic good.
-email: xander.miller@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-copyright: 'Copyright &copy; 2017 Xander Miller. All Rights Reserved.'
+copyright: 'Copyright &copy; 2024. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 description: "Ottawa Civic Tech (#YOWCT) strengthens the community of people in Ottawa who build civic good. We bring together people in policy and technology to solve tough problems and make our communities better."
@@ -26,14 +25,15 @@ social:
     url: https://twitter.com/yowcivictech
   - title: youtube
     url: https://www.youtube.com/channel/UCgHMRo-FYS5jw0MnUY75XcQ
-  - title: slack
-    url: https://yowct-invite-bot.herokuapp.com/
   - title: meetup
     url: https://www.meetup.com/YOW_CT/
   - title: github
     url: https://github.com/YOWCT
   - title: trello
     url: https://trello.com/b/LoOLqqad/ottawa-civic-tech-yowct-open-board
+  - title: slack
+    url: https://join.slack.com/t/yowcivictech/shared_invite/zt-2okutr5f9-QQkFMFKPNqyIrC5bul74OQ
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
