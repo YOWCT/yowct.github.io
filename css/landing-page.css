@@ -333,8 +333,8 @@ p.copyright {
         margin-bottom: 15px;
     }
     .event-card-thumb {
-        height: 180px;
         width: 100%;
+        height: auto;
     }
 }
 
