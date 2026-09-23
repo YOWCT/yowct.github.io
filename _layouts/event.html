@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    {% include nav.html %}
+
+    <div class="event-detail-container">
+      <div class="container">
+        <div class="row">
+          <!-- Main Content -->
+          <div class="col-md-8">
+            <div class="event-detail-box">
+              <p>
+                <a href="{{ '/events/' | prepend: site.baseurl }}" class="text-muted">
+                  <i class="fa fa-arrow-left"></i> Back to all events
+                </a>
+              </p>
+
+              <h1>{{ page.title }}</h1>
+
+              {% if page.image %}
+              <div style="margin-top: 20px; margin-bottom: 20px;">
+                <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" class="event-detail-banner-img">
+              </div>
+              {% endif %}
+
+              <ul class="event-meta-list" style="margin-top: 15px; margin-bottom: 25px;">
+                <li>
+                  <i class="fa fa-calendar"></i>
+                  <strong>{{ page.date | date: "%B %-d, %Y" }}</strong>
+                </li>
+                <li>
+                  <i class="fa fa-clock-o"></i>
+                  {{ page.date | date: "%l:%M %P" }}
+                  {% if page.duration_minutes %}
+                    ({{ page.duration_minutes }} mins)
+                  {% endif %}
+                </li>
+                {% if page.attendee_count %}
+                  <li>
+                    <i class="fa fa-users"></i>
+                    {{ page.attendee_count }} attendees
+                  </li>
+                {% endif %}
+                {% if page.hosts and page.hosts.size > 0 %}
+                  <li>
+                    <i class="fa fa-user-circle-o"></i>
+                    Hosted by: {{ page.hosts | join: ", " }}
+                  </li>
+                {% endif %}
+              </ul>
+
+              <div class="event-content-body">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar / Meta -->
+          <div class="col-md-4">
+            {% if page.hosts and page.hosts.size > 0 %}
+            <div class="event-detail-sidebar">
+              <h4><i class="fa fa-user-circle-o"></i> Hosted By</h4>
+              <ul style="padding-left: 20px; margin-bottom: 0;">
+                {% for host in page.hosts %}
+                  <li style="font-weight: 600; margin-bottom: 4px;">{{ host }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {% if page.speaker %}
+            <div class="event-detail-sidebar">
+              <h4><i class="fa fa-user"></i> Featured Speaker</h4>
+              <p style="font-size: 1.1em; font-weight: bold; margin-bottom: 4px;">{{ page.speaker }}</p>
+              {% if page.speaker_org %}
+                <p class="text-muted">{{ page.speaker_org }}</p>
+              {% endif %}
+            </div>
+            {% endif %}
+
+            {% if page.venue %}
+            <div class="event-detail-sidebar">
+              <h4><i class="fa fa-map-marker"></i> Venue</h4>
+              {% if page.venue.is_online %}
+                <p><span class="label label-info">Online / Virtual Event</span></p>
+              {% endif %}
+              {% if page.venue.name %}
+                <p style="font-weight: 600; margin-bottom: 4px;">{{ page.venue.name }}</p>
+              {% endif %}
+              {% if page.venue.address %}
+                <p class="text-muted" style="margin-bottom: 2px;">{{ page.venue.address }}</p>
+              {% endif %}
+              {% if page.venue.city %}
+                <p class="text-muted">{{ page.venue.city }}</p>
+              {% endif %}
+            </div>
+            {% endif %}
+
+            {% if page.meetup_url %}
+            <div class="event-detail-sidebar text-center">
+              <h4><i class="fa fa-meetup"></i> Meetup Listing</h4>
+              <p>View this event and RSVP history on Meetup.com:</p>
+              <a href="{{ page.meetup_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-block">
+                <i class="fa fa-meetup fa-fw"></i> View on Meetup.com
+              </a>
+            </div>
+            {% endif %}
+
+            <div class="text-center" style="margin-top: 20px;">
+              <a href="{{ '/events/' | prepend: site.baseurl }}" class="btn btn-default btn-block">
+                <i class="fa fa-th-list fa-fw"></i> Explore All Past Events
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>

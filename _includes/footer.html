@@ -5,23 +5,27 @@
       <div class="col-md-8">
         <ul class="list-inline">
           <li>
-            <a href="#home">Home</a>
+            <a href="{{ '/#home' | prepend: site.baseurl }}">Home</a>
           </li>
           <li class="footer-menu-divider">&sdot;</li>
           <li>
-            <a href="#about">About</a>
+            <a href="{{ '/#about' | prepend: site.baseurl }}">About</a>
           </li>
           <li class="footer-menu-divider">&sdot;</li>
           <li>
-            <a href="#events">Events</a>
+            <a href="{{ '/#events' | prepend: site.baseurl }}">Events</a>
           </li>
           <li class="footer-menu-divider">&sdot;</li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="{{ '/events/' | prepend: site.baseurl }}">All Events</a>
           </li>
           <li class="footer-menu-divider">&sdot;</li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="{{ '/#projects' | prepend: site.baseurl }}">Projects</a>
+          </li>
+          <li class="footer-menu-divider">&sdot;</li>
+          <li>
+            <a href="{{ '/#contact' | prepend: site.baseurl }}">Contact</a>
           </li>
         </ul>
         <p class="copyright text-muted small">Website text licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 1.0 Universal public domain dedication</a>.</p>
