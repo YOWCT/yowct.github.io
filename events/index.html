@@ -1,0 +1,394 @@
+---
+layout: page
+title: "Past Events Archive | Ottawa Civic Tech"
+description: "Browse the archive of past Ottawa Civic Tech hacknights, speakers, workshops, and civic tech events."
+---
+
+<!-- Header Banner -->
+<div class="page-header-simple">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Ottawa Civic Tech Past Events</h1>
+        <p class="lead">Archive of hacknights, guest speakers, community demos, and civic tech projects since 2016.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="padding-bottom: 60px;">
+  <!-- Filter / Search Controls -->
+  <div class="events-controls-panel">
+    <div class="row">
+      <div class="col-md-5 col-sm-6">
+        <div class="form-group">
+          <label for="eventSearch"><i class="fa fa-search"></i> Search Events & Speakers</label>
+          <input type="text" id="eventSearch" class="form-control" placeholder="Search by title, speaker, keyword, venue...">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="form-group">
+          <label for="yearFilter"><i class="fa fa-calendar"></i> Year</label>
+          <select id="yearFilter" class="form-control">
+            <option value="all">All Years</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <div class="form-group">
+          <label for="speakerFilter"><i class="fa fa-microphone"></i> Speaker</label>
+          <select id="speakerFilter" class="form-control">
+            <option value="all">All Events</option>
+            <option value="has_speaker">With Speaker Only</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-12 text-right">
+        <div class="form-group" style="padding-top: 25px;">
+          <button id="resetFilters" class="btn btn-default btn-block btn-sm">
+            <i class="fa fa-refresh"></i> Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 8px; padding-top: 10px; border-top: 1px solid #edf2f7;">
+      <div class="col-sm-6 col-xs-12">
+        <span class="events-counter-badge">
+          Showing <span id="displayedCount">0</span> of <span id="totalCount">{{ site.data.past_events.size }}</span> events
+        </span>
+      </div>
+      <div class="col-sm-6 col-xs-12 text-right" style="margin-top: 4px;">
+        <span class="text-muted small" style="margin-right: 8px;">
+          <i class="fa fa-unlock-alt text-success"></i> Open Data:
+        </span>
+        <a href="{{ '/data/events.json' | prepend: site.baseurl }}" target="_blank" class="btn btn-default btn-xs" title="Download or view raw JSON format">
+          <i class="fa fa-code"></i> events.json
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Events List Container -->
+  <div id="eventsListContainer" class="row">
+    <!-- Populated by JavaScript -->
+  </div>
+
+  <!-- Pagination Controls -->
+  <div class="row text-center" id="paginationControls" style="display: none; margin-top: 20px;">
+    <ul class="pagination" id="paginationList"></ul>
+  </div>
+
+  <!-- No results state -->
+  <div id="noResults" class="text-center" style="display: none; padding: 60px 20px;">
+    <p><i class="fa fa-search fa-3x text-muted"></i></p>
+    <h3 class="text-muted">No events found matching your criteria.</h3>
+    <p>Try clearing your search term or adjusting filters.</p>
+    <button id="clearSearchBtn" class="btn btn-primary">Reset Filters</button>
+  </div>
+</div>
+
+<!-- Embedded JSON data for client-side search -->
+<script type="application/json" id="pastEventsData">
+{{ site.data.past_events | jsonify }}
+</script>
+
+<script>
+(function() {
+  var baseUrl = "{{ site.baseurl }}";
+  var rawData = document.getElementById('pastEventsData').textContent;
+  var allEvents = [];
+  try {
+    allEvents = JSON.parse(rawData);
+  } catch (e) {
+    console.error('Failed to parse event data:', e);
+  }
+
+  var filteredEvents = allEvents.slice();
+  var currentPage = 1;
+  var pageSize = 20;
+
+  var searchInput = document.getElementById('eventSearch');
+  var yearFilter = document.getElementById('yearFilter');
+  var speakerFilter = document.getElementById('speakerFilter');
+  var resetBtn = document.getElementById('resetFilters');
+  var clearSearchBtn = document.getElementById('clearSearchBtn');
+  var container = document.getElementById('eventsListContainer');
+  var noResults = document.getElementById('noResults');
+  var displayedCount = document.getElementById('displayedCount');
+  var totalCount = document.getElementById('totalCount');
+  var paginationControls = document.getElementById('paginationControls');
+  var paginationList = document.getElementById('paginationList');
+
+  function escapeHtml(text) {
+    if (!text) return '';
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function formatDate(isoStr) {
+    try {
+      var d = new Date(isoStr);
+      if (isNaN(d.getTime())) {
+        return isoStr.substring(0, 10);
+      }
+      return d.toLocaleDateString('en-US', {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      });
+    } catch(e) {
+      return isoStr.substring(0, 10);
+    }
+  }
+
+  function formatTime(isoStr) {
+    try {
+      var d = new Date(isoStr);
+      if (isNaN(d.getTime())) return '';
+      return d.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+      });
+    } catch(e) {
+      return '';
+    }
+  }
+
+  function getCleanSnippet(markdown, maxLength) {
+    if (!markdown) return '';
+    var trimmed = markdown.trim();
+    var paragraphs = trimmed.split(/\n\s*\n/);
+    var candidate = '';
+    for (var i = 0; i < paragraphs.length; i++) {
+      var p = paragraphs[i].trim();
+      // Skip empty, headers, or bullet lists for card summary preview
+      if (p && !p.startsWith('#') && !p.startsWith('*') && !p.startsWith('-') && !p.startsWith('**Agenda')) {
+        candidate = p;
+        break;
+      }
+    }
+    if (!candidate && paragraphs.length > 0) {
+      candidate = paragraphs[0];
+    }
+    var clean = candidate
+      .replace(/\\([*_\\[\]()#+-.!~])/g, '$1')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/[*_#`~]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (clean.length > maxLength) {
+      return clean.substring(0, maxLength).trim() + '...';
+    }
+    return clean;
+  }
+
+  function renderEvents() {
+    var total = filteredEvents.length;
+    displayedCount.textContent = total;
+
+    if (total === 0) {
+      container.innerHTML = '';
+      noResults.style.display = 'block';
+      paginationControls.style.display = 'none';
+      return;
+    }
+
+    noResults.style.display = 'none';
+
+    var totalPages = Math.ceil(total / pageSize);
+    if (currentPage > totalPages) currentPage = 1;
+
+    var startIndex = (currentPage - 1) * pageSize;
+    var endIndex = Math.min(startIndex + pageSize, total);
+    var pageEvents = filteredEvents.slice(startIndex, endIndex);
+
+    var html = '';
+    for (var i = 0; i < pageEvents.length; i++) {
+      var evt = pageEvents[i];
+      var eventUrl = baseUrl + '/events/' + evt.slug + '/';
+      var formattedDate = formatDate(evt.date);
+      var formattedTime = formatTime(evt.date);
+      var snippet = getCleanSnippet(evt.description_markdown, 180);
+
+      html += '<div class="col-md-12">';
+      html += '  <div class="event-card">';
+      html += '    <div class="event-card-inner">';
+
+      if (evt.image) {
+        var imgSrc = baseUrl + evt.image;
+        html += '      <div class="event-card-thumb-wrap">';
+        html += '        <a href="' + eventUrl + '"><img src="' + imgSrc + '" class="event-card-thumb" alt="' + escapeHtml(evt.title) + '" loading="lazy"></a>';
+        html += '      </div>';
+      }
+
+      html += '      <div class="event-card-content">';
+      html += '        <div class="event-card-header">';
+      html += '          <h3 class="event-card-title"><a href="' + eventUrl + '">' + escapeHtml(evt.title) + '</a></h3>';
+      if (evt.speaker) {
+        html += '          <span class="event-speaker-badge"><i class="fa fa-microphone"></i> Speaker: ' + escapeHtml(evt.speaker) + (evt.speaker_org ? ' (' + escapeHtml(evt.speaker_org) + ')' : '') + '</span>';
+      }
+      html += '        </div>';
+
+      html += '        <ul class="event-meta-list">';
+      html += '          <li><i class="fa fa-calendar"></i> ' + formattedDate + '</li>';
+      if (formattedTime) {
+        html += '          <li><i class="fa fa-clock-o"></i> ' + formattedTime + '</li>';
+      }
+      if (evt.venue && evt.venue.name) {
+        html += '          <li><i class="fa fa-map-marker"></i> ' + escapeHtml(evt.venue.name) + '</li>';
+      } else if (evt.venue && evt.venue.is_online) {
+        html += '          <li><i class="fa fa-video-camera"></i> Online</li>';
+      }
+      if (evt.attendee_count) {
+        html += '          <li><i class="fa fa-users"></i> ' + evt.attendee_count + ' attendees</li>';
+      }
+      if (evt.hosts && evt.hosts.length > 0) {
+        html += '          <li><i class="fa fa-user-circle-o"></i> Hosted by: ' + escapeHtml(evt.hosts.join(', ')) + '</li>';
+      }
+      html += '        </ul>';
+
+      if (snippet) {
+        html += '        <p class="event-snippet">' + escapeHtml(snippet) + '</p>';
+      }
+
+      html += '        <div class="event-footer-links">';
+      html += '          <a href="' + eventUrl + '" class="btn btn-primary btn-sm">View Full Event Details &rarr;</a>';
+      if (evt.meetup_url) {
+        html += '          <a href="' + evt.meetup_url + '" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fa fa-meetup"></i> Meetup Listing</a>';
+      }
+      html += '        </div>';
+
+      html += '      </div>'; // .event-card-content
+      html += '    </div>'; // .event-card-inner
+      html += '  </div>'; // .event-card
+      html += '</div>';
+    }
+
+    container.innerHTML = html;
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    if (totalPages <= 1) {
+      paginationControls.style.display = 'none';
+      return;
+    }
+
+    paginationControls.style.display = 'block';
+    var pagesHtml = '';
+
+    pagesHtml += '<li class="' + (currentPage === 1 ? 'disabled' : '') + '">';
+    pagesHtml += '  <a href="#" data-page="' + (currentPage - 1) + '" aria-label="Previous">&laquo;</a>';
+    pagesHtml += '</li>';
+
+    var startPage = Math.max(1, currentPage - 3);
+    var endPage = Math.min(totalPages, currentPage + 3);
+
+    if (startPage > 1) {
+      pagesHtml += '<li><a href="#" data-page="1">1</a></li>';
+      if (startPage > 2) pagesHtml += '<li class="disabled"><span>...</span></li>';
+    }
+
+    for (var p = startPage; p <= endPage; p++) {
+      pagesHtml += '<li class="' + (p === currentPage ? 'active' : '') + '">';
+      pagesHtml += '  <a href="#" data-page="' + p + '">' + p + '</a>';
+      pagesHtml += '</li>';
+    }
+
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) pagesHtml += '<li class="disabled"><span>...</span></li>';
+      pagesHtml += '<li><a href="#" data-page="' + totalPages + '">' + totalPages + '</a></li>';
+    }
+
+    pagesHtml += '<li class="' + (currentPage === totalPages ? 'disabled' : '') + '">';
+    pagesHtml += '  <a href="#" data-page="' + (currentPage + 1) + '" aria-label="Next">&raquo;</a>';
+    pagesHtml += '</li>';
+
+    paginationList.innerHTML = pagesHtml;
+
+    var links = paginationList.querySelectorAll('a[data-page]');
+    for (var j = 0; j < links.length; j++) {
+      links[j].addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetPage = parseInt(this.getAttribute('data-page'), 10);
+        if (targetPage >= 1 && targetPage <= totalPages && targetPage !== currentPage) {
+          currentPage = targetPage;
+          renderEvents();
+          window.scrollTo({
+            top: container.getBoundingClientRect().top + window.pageYOffset - 120,
+            behavior: 'smooth'
+          });
+        }
+      });
+    }
+  }
+
+  function applyFilters() {
+    var term = searchInput.value.trim().toLowerCase();
+    var year = yearFilter.value;
+    var speakerOpt = speakerFilter.value;
+
+    filteredEvents = allEvents.filter(function(evt) {
+      if (year !== 'all') {
+        if (!evt.date || evt.date.substring(0, 4) !== year) {
+          return false;
+        }
+      }
+
+      if (speakerOpt === 'has_speaker') {
+        if (!evt.speaker || evt.speaker.trim() === '') {
+          return false;
+        }
+      }
+
+      if (term) {
+        var matchTitle = evt.title && evt.title.toLowerCase().indexOf(term) !== -1;
+        var matchSpeaker = evt.speaker && evt.speaker.toLowerCase().indexOf(term) !== -1;
+        var matchOrg = evt.speaker_org && evt.speaker_org.toLowerCase().indexOf(term) !== -1;
+        var matchHosts = evt.hosts && evt.hosts.join(' ').toLowerCase().indexOf(term) !== -1;
+        var matchVenue = evt.venue && evt.venue.name && evt.venue.name.toLowerCase().indexOf(term) !== -1;
+        var matchDesc = evt.description_markdown && evt.description_markdown.toLowerCase().indexOf(term) !== -1;
+
+        if (!matchTitle && !matchSpeaker && !matchOrg && !matchHosts && !matchVenue && !matchDesc) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+
+    currentPage = 1;
+    renderEvents();
+  }
+
+  function resetAllFilters() {
+    searchInput.value = '';
+    yearFilter.value = 'all';
+    speakerFilter.value = 'all';
+    applyFilters();
+  }
+
+  searchInput.addEventListener('input', applyFilters);
+  yearFilter.addEventListener('change', applyFilters);
+  speakerFilter.addEventListener('change', applyFilters);
+  resetBtn.addEventListener('click', resetAllFilters);
+  clearSearchBtn.addEventListener('click', resetAllFilters);
+
+  // Initial render
+  renderEvents();
+})();
+</script>

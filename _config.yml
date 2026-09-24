@@ -16,6 +16,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
