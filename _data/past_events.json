@@ -10,7 +10,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -35,7 +35,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -60,7 +60,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -85,7 +85,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -110,7 +110,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -135,7 +135,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -160,7 +160,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -186,7 +186,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -239,7 +239,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Susana Guerrero",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Susana Guerrero",
@@ -264,8 +264,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Susana Guerrero",
-    "speaker_org": null,
+    "speaker": "Sam Burton, Claudie Larouche & Parth Shah",
+    "speaker_org": "Canadian Digital Service / CIRA",
     "hosts": [
       "Susana Guerrero",
       "Brett Tackaberry",
@@ -290,8 +290,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Ryan Androsoff",
-    "speaker_org": null,
+    "speaker": "Paul Craig",
+    "speaker_org": "TaxGPT",
     "hosts": [
       "Ryan Androsoff",
       "Susana Guerrero",
@@ -316,8 +316,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Susana Guerrero",
-    "speaker_org": null,
+    "speaker": "Shelley Robinson & Andrew Martey-Asare",
+    "speaker_org": "National Capital FreeNet",
     "hosts": [
       "Susana Guerrero",
       "Leigh-Ann",
@@ -343,8 +343,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
-    "speaker_org": null,
+    "speaker": "Luc Lalande & Camila Pastran",
+    "speaker_org": "Rideau-Rockcliffe Community Resource Centre",
     "hosts": [
       "Brett Tackaberry",
       "Susana Guerrero",
@@ -370,8 +370,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Susana Guerrero",
-    "speaker_org": null,
+    "speaker": "Darrell Bridge, Ben Dick & Paul Steeves",
+    "speaker_org": "City of Ottawa",
     "hosts": [
       "Susana Guerrero",
       "Kent Aitken",
@@ -396,8 +396,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
-    "speaker_org": null,
+    "speaker": "Gabe Sawhney",
+    "speaker_org": "Civic Tech Toronto",
     "hosts": [
       "Brett Tackaberry",
       "Leigh-Ann",
@@ -422,8 +422,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
-    "speaker_org": null,
+    "speaker": "Dominira Saul",
+    "speaker_org": "DFFRNT",
     "hosts": [
       "Leigh-Ann",
       "Brett Tackaberry",
@@ -449,7 +449,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -475,7 +475,7 @@
       "city": "",
       "is_online": true
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -500,8 +500,8 @@
       "city": "",
       "is_online": true
     },
-    "speaker": "Lucas Cherkewski",
-    "speaker_org": null,
+    "speaker": "Jaimie Boyd, David Eaves, Jesse Hirsh & Shingai Manjengwa",
+    "speaker_org": "Institute on Governance (IOG)",
     "hosts": [
       "Lucas Cherkewski",
       "Ryan Androsoff"
@@ -524,8 +524,8 @@
       "city": "",
       "is_online": true
     },
-    "speaker": "Kim Girling",
-    "speaker_org": null,
+    "speaker": "Kimberly Girling",
+    "speaker_org": "Evidence for Democracy",
     "hosts": [],
     "image_url": "https://secure.meetupstatic.com/photos/event/a/e/b/b/highres_485564731.jpeg",
     "image": "/assets/images/events/2020-04-07-269740173.jpeg",
@@ -545,8 +545,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Pia Andrews",
-    "speaker_org": "project demos",
+    "speaker": "Pia Andrews & Mark Richardson",
+    "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
       "Lucas Cherkewski"
@@ -569,7 +569,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Lucas Cherkewski",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Lucas Cherkewski",
@@ -593,7 +593,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -642,8 +642,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Matthew Darwin",
-    "speaker_org": null,
+    "speaker": "City of Ottawa Open Data and GIS teams",
+    "speaker_org": "City of Ottawa",
     "hosts": [
       "Matthew Darwin",
       "Sean Boots"
@@ -667,7 +667,7 @@
       "is_online": false
     },
     "speaker": "Lorin Hochstein",
-    "speaker_org": null,
+    "speaker_org": "Netflix",
     "hosts": [
       "Sean Boots",
       "Matthew Darwin"
@@ -690,7 +690,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Lucas Cherkewski",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Lucas Cherkewski",
@@ -715,7 +715,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -739,7 +739,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Lucas Cherkewski",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Lucas Cherkewski",
@@ -763,7 +763,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -787,7 +787,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -811,7 +811,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Lucas Cherkewski",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Lucas Cherkewski",
@@ -835,8 +835,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
-    "speaker_org": null,
+    "speaker": "Adriana Groh, Daniel Carranza, Tarik Nesh-Nash, Júlia de Carvalho, Caley Brock & Siobhan Özege",
+    "speaker_org": "Code for Canada / Global Civic Tech",
     "hosts": [
       "Douglas Vidal-Hernandez"
     ],
@@ -858,7 +858,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -882,7 +882,7 @@
       "is_online": false
     },
     "speaker": "Matt Jukes",
-    "speaker_org": null,
+    "speaker_org": "Notbinary",
     "hosts": [
       "Douglas Vidal-Hernandez"
     ],
@@ -904,7 +904,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -927,7 +927,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Matthew Darwin",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Matthew Darwin"
@@ -950,8 +950,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Matthew Darwin",
-    "speaker_org": null,
+    "speaker": "Alessandro Alasia",
+    "speaker_org": "Statistics Canada",
     "hosts": [
       "Matthew Darwin"
     ],
@@ -973,7 +973,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Matthew Darwin",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Matthew Darwin"
@@ -996,8 +996,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Matthew Darwin",
-    "speaker_org": null,
+    "speaker": "City of Ottawa Open Data Team",
+    "speaker_org": "City of Ottawa",
     "hosts": [
       "Matthew Darwin"
     ],
@@ -1019,7 +1019,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Ryan Androsoff",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Ryan Androsoff"
@@ -1042,7 +1042,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Ryan Androsoff",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Ryan Androsoff"
@@ -1066,7 +1066,7 @@
       "is_online": false
     },
     "speaker": "Ryan Androsoff",
-    "speaker_org": null,
+    "speaker_org": "Think-Digital",
     "hosts": [
       "Ryan Androsoff"
     ],
@@ -1088,7 +1088,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1111,7 +1111,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry",
@@ -1135,8 +1135,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
-    "speaker_org": null,
+    "speaker": "Daniel Tse, Siobhan Ozege, Caley Brock & Fatima Khalid",
+    "speaker_org": "Code for Canada",
     "hosts": [
       "Brett Tackaberry"
     ],
@@ -1158,7 +1158,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1181,7 +1181,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1204,7 +1204,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1227,7 +1227,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1250,7 +1250,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez",
@@ -1274,7 +1274,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1297,7 +1297,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1320,7 +1320,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1366,7 +1366,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1389,7 +1389,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Luisa Ji",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Luisa Ji"
@@ -1412,7 +1412,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Luisa Ji",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Luisa Ji"
@@ -1435,7 +1435,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Luisa Ji",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Luisa Ji"
@@ -1458,7 +1458,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Luisa Ji",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Luisa Ji"
@@ -1481,7 +1481,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Luisa Ji",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Luisa Ji"
@@ -1504,7 +1504,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1527,7 +1527,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1573,7 +1573,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -1596,7 +1596,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Douglas Vidal-Hernandez",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Douglas Vidal-Hernandez"
@@ -1619,7 +1619,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -1643,7 +1643,7 @@
       "is_online": false
     },
     "speaker": "Karen McCrimmon",
-    "speaker_org": null,
+    "speaker_org": "MP for Kanata—Carleton",
     "hosts": [
       "Douglas Vidal-Hernandez"
     ],
@@ -1665,7 +1665,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -1688,7 +1688,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1711,7 +1711,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1734,7 +1734,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1780,7 +1780,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Brett Tackaberry",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Brett Tackaberry"
@@ -1803,8 +1803,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
-    "speaker_org": null,
+    "speaker": "Marc René de Cotret, Ebony Sager & Aaron Snow",
+    "speaker_org": "City of Ottawa / Ontario Digital Service / Canadian Digital Service",
     "hosts": [
       "James Chan"
     ],
@@ -1826,7 +1826,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Alexandre Enkerli",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Alexandre Enkerli"
@@ -1872,7 +1872,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Alexandre Enkerli",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Alexandre Enkerli"
@@ -1896,7 +1896,7 @@
       "is_online": false
     },
     "speaker": "Alex Benay",
-    "speaker_org": "CIO of the Government of Canada",
+    "speaker_org": "Government of Canada",
     "hosts": [
       "Alexandre Enkerli"
     ],
@@ -1918,7 +1918,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Alexandre Enkerli",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Alexandre Enkerli"
@@ -1941,7 +1941,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Alexandre Enkerli",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Alexandre Enkerli"
@@ -2011,7 +2011,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -2081,7 +2081,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2104,7 +2104,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2127,7 +2127,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2150,8 +2150,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Jenna Feldman",
-    "speaker_org": "Zeina Osman",
+    "speaker": "Jenna Feldman & Zeina Osman",
+    "speaker_org": "CIRA",
     "hosts": [
       "Sean Boots"
     ],
@@ -2173,7 +2173,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -2196,7 +2196,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -2219,7 +2219,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -2242,7 +2242,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -2311,7 +2311,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "mike gifford",
@@ -2336,7 +2336,7 @@
       "is_online": false
     },
     "speaker": "Nico Koenig",
-    "speaker_org": null,
+    "speaker_org": "Peer 2 Peer University",
     "hosts": [
       "Sean Boots",
       "James Chan"
@@ -2359,7 +2359,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -2383,7 +2383,7 @@
       "is_online": false
     },
     "speaker": "Michael Karlin",
-    "speaker_org": null,
+    "speaker_org": "Treasury Board Secretariat",
     "hosts": [
       "James Chan",
       "Elizabeth",
@@ -2548,7 +2548,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Working Session",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2571,7 +2571,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Working Session",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2617,7 +2617,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2640,7 +2640,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2663,7 +2663,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -2687,7 +2687,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Jason White",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "mike gifford",
@@ -2711,7 +2711,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -2735,7 +2735,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Alexandre Enkerli",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Alexandre Enkerli",
@@ -2759,7 +2759,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2782,7 +2782,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2805,7 +2805,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots"
@@ -2828,7 +2828,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Derek Alton",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Derek Alton"
@@ -2876,8 +2876,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Laura Wesley",
-    "speaker_org": "Sean Kibbee",
+    "speaker": "Laura Wesley & Sean Kibbee",
+    "speaker_org": "Government of Canada",
     "hosts": [
       "mike gifford",
       "Dan Monafu",
@@ -2901,7 +2901,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Dan Monafu",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Dan Monafu",
@@ -2926,7 +2926,7 @@
       "is_online": false
     },
     "speaker": "Tracey Lauriault",
-    "speaker_org": null,
+    "speaker_org": "Carleton University",
     "hosts": [
       "Dan Monafu",
       "mike gifford"
@@ -2949,7 +2949,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -2995,7 +2995,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -3041,7 +3041,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Dan Monafu",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Dan Monafu"
@@ -3064,7 +3064,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Dan Monafu",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Dan Monafu"
@@ -3088,7 +3088,7 @@
       "is_online": false
     },
     "speaker": "Janak Alford",
-    "speaker_org": null,
+    "speaker_org": "prototypeD / Mademill",
     "hosts": [
       "Dan Monafu"
     ],
@@ -3133,7 +3133,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -3157,7 +3157,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -3181,7 +3181,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -3253,7 +3253,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Sean Boots",
@@ -3278,7 +3278,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Sean Boots",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "mike gifford",
@@ -3303,8 +3303,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Ottawa Watch",
-    "speaker_org": null,
+    "speaker": "Kevin O'Donnell",
+    "speaker_org": "OttWatch",
     "hosts": [
       "Megan Beretta"
     ],
@@ -3326,7 +3326,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Megan Beretta",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Megan Beretta"
@@ -3349,7 +3349,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Megan Beretta",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Megan Beretta"
@@ -3372,7 +3372,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Megan Beretta",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Megan Beretta",
@@ -3397,7 +3397,7 @@
       "is_online": false
     },
     "speaker": "Alessandro Alasia",
-    "speaker_org": null,
+    "speaker_org": "Statistics Canada",
     "hosts": [
       "Megan Beretta",
       "Dan Monafu"
@@ -3420,8 +3420,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
-    "speaker_org": null,
+    "speaker": "Chris",
+    "speaker_org": "DemocracyKit",
     "hosts": [
       "James Chan"
     ],
@@ -3443,8 +3443,8 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
-    "speaker_org": null,
+    "speaker": "Ryan Androsoff",
+    "speaker_org": "Treasury Board Secretariat",
     "hosts": [
       "James Chan"
     ],
@@ -3466,7 +3466,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -3489,7 +3489,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -3512,7 +3512,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -3535,7 +3535,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "James Chan",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -3559,7 +3559,7 @@
       "is_online": false
     },
     "speaker": "Elizabeth Dubois",
-    "speaker_org": null,
+    "speaker_org": "University of Ottawa",
     "hosts": [
       "James Chan",
       "Dan Monafu"
@@ -3582,7 +3582,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Project Updates",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "James Chan"
@@ -3606,7 +3606,7 @@
       "is_online": false
     },
     "speaker": "Gabe Sawhney",
-    "speaker_org": null,
+    "speaker_org": "Civic Tech Toronto",
     "hosts": [
       "Dan Monafu",
       "Laine Johnson",
@@ -3654,7 +3654,7 @@
       "is_online": false
     },
     "speaker": "Rob Giggey",
-    "speaker_org": null,
+    "speaker_org": "City of Ottawa",
     "hosts": [
       "James Chan"
     ],
@@ -3700,7 +3700,7 @@
       "is_online": false
     },
     "speaker": "Joyce Halladay",
-    "speaker_org": null,
+    "speaker_org": "Tiny House",
     "hosts": [
       "mike gifford"
     ],
@@ -3723,7 +3723,7 @@
       "is_online": false
     },
     "speaker": "Chayanika Lutes",
-    "speaker_org": null,
+    "speaker_org": "Community Foundations of Ottawa",
     "hosts": [
       "Nisa"
     ],
@@ -3746,7 +3746,7 @@
       "is_online": false
     },
     "speaker": "Suneeta Millington",
-    "speaker_org": null,
+    "speaker_org": "Prime Minister's Row",
     "hosts": [
       "James Chan"
     ],
@@ -3768,7 +3768,7 @@
       "city": "Ottawa",
       "is_online": false
     },
-    "speaker": "Laine Johnson",
+    "speaker": null,
     "speaker_org": null,
     "hosts": [
       "Laine Johnson"
@@ -3792,7 +3792,7 @@
       "is_online": false
     },
     "speaker": "Megan Beretta",
-    "speaker_org": null,
+    "speaker_org": "Civix",
     "hosts": [],
     "image_url": "https://secure.meetupstatic.com/photos/event/a/e/b/b/highres_485564731.jpeg",
     "image": "/assets/images/events/2016-07-26-232597434.jpeg",
